@@ -1,26 +1,42 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Accessible Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	<h1>ARIA Role Implementation</h1>
-	<nav>
-		<img src="https://64.media.tumblr.com/68423fdd6093a6f281b91b28eff9097f/tumblr_inline_noery1zJyq1rbrg1w_540.png" alt="periodic_table">
-		
-	</nav>
-	<ul>
-		<li>button:Marks an element as a button.</li>
-		<li>navigation:Identifies major navigation links.</li>
-		<li>main : The main content area of the page.</li>
-	</ul>
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <!-- Navigation with ARIA role -->
+  <nav role="navigation">
+    <ul role="list">
+      <li role="listitem"><a href="#about">About</a></li>
+      <li role="listitem"><a href="#projects">Projects</a></li>
+      <li role="listitem"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Heading -->
+  <h1 role="heading">Welcome to My Portfolio</h1>
+
+  <!-- Profile Image -->
+  <img role="img" src="profile.jpg" alt="A picture of Rahul, smiling confidently">
+
+  <!-- Brief Description -->
+  <p id="about">
+    Hello! I’m Rahul, a passionate developer focused on creating accessible and user-friendly web applications.
+  </p>
+
+  <!-- List of Skills -->
+  <section id="projects">
+    <h2 role="heading">Skills</h2>
+    <ul role="list">
+      <li role="listitem">HTML & CSS</li>
+      <li role="listitem">JavaScript</li>
+      <li role="listitem">Python</li>
+    </ul>
+  </section>
 
 </body>
-
 </html>
